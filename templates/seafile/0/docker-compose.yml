@@ -29,9 +29,10 @@ seafile:
     - SEAFILE_ADMIN_PASSWORD=${ADMIN_PASSWORD}     # Specifies Seafile admin password, default is 'asecret'.
     - SEAFILE_SERVER_LETSENCRYPT=false   # Whether to use https or not.
 #   - SEAFILE_SERVER_HOSTNAME=file.yechuan.org # Specifies your host name if https is enabled.
-  depends_on:
+  links:
     - db
     - memcached
+    - onlyoffice
 
 onlyoffice:
   image: onlyoffice/documentserver
