@@ -3,7 +3,7 @@
   description: seafile system 
   version: "v1.0"
   questions:
-    - variable: " DB_PASSWORD"
+    - variable: "DB_PASSWORD"
       label: Mysql Root Password
       description:  mysql database passowrd for root
       type: "string"     
