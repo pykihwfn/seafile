@@ -1,0 +1,34 @@
+.catalog:
+  name: "seafiel system"
+  description: seafile system 
+  version: "v1.0"
+  questions:
+    - variable: " DB_PASSWORD"
+      label: Mysql Root Password
+      description:  mysql database passowrd for root
+      type: "string"     
+    - variable: "DB_DATA_DIR"
+      label: Database Data Dir
+      description: mysql database data dir
+      type: "string"
+    - variable: "SEAFILE_PORT"
+      label: "Seafile Web Port"
+      description: "http port for visit in web page"
+      type: "int"
+    - variable: "SEAFILE_VOLUME"
+      label: "seafile data Volume"
+      description: "seafile data volume in node"
+      type: "string"
+    - variable: "EMAIL"
+      label: "Administortar User Email"
+      description: "the admin user email"
+      type: "string"
+    - variable: "ADMIN_PASSWORD"
+      label: "Administortar User Password"
+      description: "the admin user Passwrod"
+      type: "string"
+    - variable: "ONLYOFFICE_PORT"
+      label: "Onlyoffice Port"
+      description: "the onlyoffice container public port"
+      type: "int"
+
