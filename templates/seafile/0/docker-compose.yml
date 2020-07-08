@@ -30,9 +30,9 @@ seafile:
     - SEAFILE_SERVER_LETSENCRYPT=false   # Whether to use https or not.
 #   - SEAFILE_SERVER_HOSTNAME=file.yechuan.org # Specifies your host name if https is enabled.
   links:
-    - db
-    - memcached
-    - onlyoffice
+    - db:db
+    - memcached:memcached
+    - onlyoffice:onlyoffice
 
 onlyoffice:
   image: onlyoffice/documentserver
