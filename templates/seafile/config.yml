@@ -1,5 +1,5 @@
-name:seafile
-description:  seafile system
+name: seafile
+description:  seafile_system
 version: # Version of the Catalog to be used
 category: # Category to be used for searching catalog entries
 maintainer: zhuxiaowei
